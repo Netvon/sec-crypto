@@ -1,6 +1,9 @@
 # Sec1 Crypto
 Tom van Nimwegen
 
+### Live versie
+[https://sec.netvon.nl/](https://sec.netvon.nl/)
+
 ### Gebruikt
 - `Node 7.10.0` + `express`
 	- Voor het server van de website en het afhandelen van requests.
@@ -19,6 +22,7 @@ Tom van Nimwegen
 	- voor extra security headers
 	- [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
 	- zie `src/index.js` @ line 20~22
+	- [Securiy Headers](https://securityheaders.io/?q=https%3A%2F%2Fsec.netvon.nl%2F)
 - `mongoose`
 	- voor het opslaan van teksten
 	- [https://www.npmjs.com/package/mongoose](https://www.npmjs.com/package/mongoose)
