@@ -1,0 +1,30 @@
+{
+  "name": "sec-crypto",
+  "version": "1.0.0",
+  "description": "Easy Crypto",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "Tom van Nimwegen",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "@types/node": "^7.0.31"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "csurf": "^1.9.0",
+    "express": "^4.15.3",
+    "express-flash-messages": "^0.1.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "helmet": "^3.6.1",
+    "mongoose": "^4.10.6",
+    "node-rate-limiter": "^0.1.1",
+    "npm": "^5.0.3"
+  }
+}
