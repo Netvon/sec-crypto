@@ -16,7 +16,11 @@ mongoose.connect('mongodb://127.0.0.1/sec')
 app.use( express.static( path.resolve( __dirname, '../public' ) ) )
 app.use( compression() )
 app.use( cp() )
+
 app.use( helmet() )
+app.use( helmet.contentSecurityPolicy({ directives: { defaultSrc: ['\'self\''] } }) )
+app.use( helmet.referrerPolicy({ policy: 'no-referrer' }))
+
 app.use( session({ secret: 'keyboard cat', resave: true, saveUninitialized: true }) )
 app.engine('handlebars', exphbs.create({}).engine)
 app.set('view engine', 'handlebars')
