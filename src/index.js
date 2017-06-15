@@ -1,3 +1,6 @@
+const dotenv		= require('dotenv')
+dotenv.config()
+
 const compression	= require('compression')
 const cp 			= require('cookie-parser')
 const helmet		= require('helmet')
@@ -11,7 +14,7 @@ const exphbs		= require('express-handlebars')
 
 const mongoose = require('mongoose')
 mongoose.Promise = Promise
-mongoose.connect('mongodb://127.0.0.1/sec')
+mongoose.connect(process.env.DB_URL)
 
 app.use( express.static( path.resolve( __dirname, '../public' ) ) )
 app.use( compression() )
